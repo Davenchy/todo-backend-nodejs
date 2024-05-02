@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
 import logger from './utils/logger.js';
+import todoRouter from './controllers/todo.js';
 
 // load environment variables
 dotenv.config();
@@ -14,6 +15,8 @@ app.use(express.json());
 app.use(logger);
 
 
+// use controllers
+app.use('/todo', todoRouter);
 
 // connect to database and start the server
 mongoose.connect(MONGO_URI).then(() => {
