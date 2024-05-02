@@ -6,6 +6,22 @@ It uses [Express](https://expressjs.com/) as a web server.
 
 It uses [Mongoose](https://mongoosejs.com/) for database management.
 
+## Install and Run
+
+Clone the project using
+
+```shell
+git clone --depth 1 https://github.com/Davenchy/todo-backend-nodejs.git
+cd todo-backend-nodejs
+```
+
+Install dependencies and run the server
+
+```shell
+npm install
+npm start
+```
+
 ## Environment Variables
 
 The following environment variables are required:
